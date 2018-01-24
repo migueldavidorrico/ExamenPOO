@@ -6,6 +6,7 @@ public abstract class Examen {
     protected int acertadas=0;
     protected int puntuacionTotal =0;
     public void addPregunta(Pregunta p){
+        preguntas[numeroPreguntas++]=p;
     }
     public void sumaPuntuacion(int puntuacion){
         this.puntuacionTotal +=puntuacion;
