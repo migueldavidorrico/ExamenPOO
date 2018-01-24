@@ -6,10 +6,12 @@ public abstract class Question {
         this.score = puntuacion;
     }
 
-    public abstract void ask();
-    public boolean respuestaCorrecta(){
-        return this.isAnswerRight;
+    public int getScore() {
+        return score;
     }
+
+    public abstract void ask();
+
     public abstract void showClue();
 
 }
